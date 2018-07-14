@@ -21,7 +21,7 @@ import {
 const routes: Routes = [
   { path: '', component: ExamplesComponent, children: [
       { path: 'body/page1', component: Page1Component },
-      { path: 'body/page2', component: Page2Component, data: { bodyClass: 'body-feed body-class' }},
+      { path: 'body/page2', component: Page2Component, data: { bodyClass: 'body-feed,body-class' }},
     ]
   },
 ];

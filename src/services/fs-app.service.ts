@@ -31,7 +31,7 @@ export class FsAppService {
           const data = event.snapshot.routeConfig.data;
           if (data && data.bodyClass) {
 
-            data.bodyClass.split(' ').forEach((cls) => {
+            data.bodyClass.split(/[\s,]/).forEach((cls) => {
               this._renderer.addClass(document.body, cls);
             });
           }
