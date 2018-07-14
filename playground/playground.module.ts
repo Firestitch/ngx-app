@@ -13,7 +13,8 @@ import {
   ExampleComponent,
   ExamplesComponent,
   Page1Component,
-  Page2Component
+  Page2Component,
+  StylingComponent
 } from './app/components';
 
 
@@ -43,7 +44,8 @@ const routes: Routes = [
     ExamplesComponent,
     ExampleComponent,
     Page1Component,
-    Page2Component
+    Page2Component,
+    StylingComponent
   ],
   providers: [
   ],

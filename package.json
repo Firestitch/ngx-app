@@ -1,7 +1,7 @@
 {
-  "name": "@firestitch/fs-app",
-  "description": "@firestitch/fs-app",
-  "version": "0.1.0",
+  "name": "@firestitch/app",
+  "description": "@firestitch/app",
+  "version": "0.1.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/Firestitch/fs-app"
