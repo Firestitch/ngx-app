@@ -30,7 +30,10 @@ export class FsAppService {
         if (event instanceof ActivationEnd) {
           const data = event.snapshot.routeConfig.data;
           if (data && data.bodyClass) {
-            this._renderer.addClass(document.body, data.bodyClass);
+
+            data.bodyClass.split(' ').forEach((cls) => {
+              this._renderer.addClass(document.body, cls);
+            });
           }
         } else if (event instanceof ActivationStart) {
           document.body.className.split(' ').forEach((name) => {

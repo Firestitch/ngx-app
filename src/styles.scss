@@ -1,9 +1,9 @@
 .fs-form-field-label {
-  display: block;
-  top: auto;
-  position: relative;
-  -webkit-transform: scale(0.75);
-  transform: scale(0.75);
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
+  display: block !important;
+  top: auto !important;
+  position: relative !important;
+  -webkit-transform: scale(0.75) !important;
+  transform: scale(0.75) !important;
+  -webkit-transform-origin: 0 0 !important;
+  transform-origin: 0 0 !important;
 }
