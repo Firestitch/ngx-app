@@ -7,3 +7,15 @@
   -webkit-transform-origin: 0 0 !important;
   transform-origin: 0 0 !important;
 }
+
+@media only screen and (max-width: 600px) {
+  .cdk-overlay-container .cdk-global-overlay-wrapper .cdk-overlay-pane:not(.fs-message-pane) {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed !important;
+      max-width: none !important;
+      width: auto !important;
+  }
+}

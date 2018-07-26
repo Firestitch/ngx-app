@@ -14,7 +14,9 @@ import {
   ExamplesComponent,
   Page1Component,
   Page2Component,
-  StylingComponent
+  StylingComponent,
+  BasicDialogComponent,
+  BasicComponent
 } from './app/components';
 
 
@@ -38,6 +40,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
   ],
   entryComponents: [
+    BasicDialogComponent
   ],
   declarations: [
     AppComponent,
@@ -45,7 +48,9 @@ const routes: Routes = [
     ExampleComponent,
     Page1Component,
     Page2Component,
-    StylingComponent
+    StylingComponent,
+    BasicDialogComponent,
+    BasicComponent
   ],
   providers: [
   ],
