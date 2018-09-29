@@ -16,16 +16,26 @@ import {
   Page2Component,
   StylingComponent,
   BasicDialogComponent,
-  BasicComponent
+  BasicComponent,
+  ComponentClassComponent,
+  ComponentClassPageComponent,
+  ComponentExampleComponent
 } from './app/components';
 
 
 const routes: Routes = [
-  { path: '', component: ExamplesComponent, children: [
+  { path: '', component: ExamplesComponent, children: 
+    [
       { path: 'body/page1', component: Page1Component },
       { path: 'body/page2', component: Page2Component, data: { bodyClass: 'body-feed,body-class' }},
-    ]
+    ],
   },
+  { path: '', component: ComponentClassComponent, children: 
+    [
+      { path: 'component/class1', component: ComponentClassPageComponent },
+      { path: 'component/class2', component: ComponentClassPageComponent }
+    ]
+  }
 ];
 
 @NgModule({
@@ -50,7 +60,10 @@ const routes: Routes = [
     Page2Component,
     StylingComponent,
     BasicDialogComponent,
-    BasicComponent
+    BasicComponent,
+    ComponentClassComponent,
+    ComponentClassPageComponent,
+    ComponentExampleComponent
   ],
   providers: [
   ],

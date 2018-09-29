@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FsAppService } from '../../src/services';
 
 
@@ -7,15 +7,14 @@ import { FsAppService } from '../../src/services';
   templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit, OnDestroy {
-  constructor(private _renderer: Renderer2, private _appService: FsAppService) {
-  }
+  
+  constructor(private _appService: FsAppService) {}
 
   public ngOnInit() {
-    this._appService.renderer = this._renderer;
-    this._appService.initBodyClassListener();
+    this._appService.init();
   }
 
   public ngOnDestroy() {
-    this._appService.destroyBodyClassListener();
+    this._appService.destroy();
   }
 }
